@@ -6,7 +6,8 @@ const config = {
 	build: {
 		sourcemap: false,
 		rollupOptions: {
-			sourcemap: false
+			sourcemap: false,
+			maxParallelFileOps: 10
 		}
 	}
 };
