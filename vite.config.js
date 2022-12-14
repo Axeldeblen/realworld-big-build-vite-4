@@ -2,7 +2,14 @@ import { sveltekit } from '@sveltejs/kit/vite';
 
 /** @type {import('vite').UserConfig} */
 const config = {
-	plugins: [sveltekit()]
+	plugins: [sveltekit()],
+	build: {
+		sourcemap: false,
+		rollupOptions: {
+			sourcemap: false,
+			maxParallelFileOps: 10
+		}
+	}
 };
 
 export default config;
