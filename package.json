@@ -20,5 +20,10 @@
 		"svelte": "^3.54.0",
 		"typescript": "^4.9.4",
 		"vite": "^4.0.1"
+	},
+	"pnpm": {
+		"overrides": {
+			"rollup": "github:bluwy/rollup#ast-lru"
+		}
 	}
 }

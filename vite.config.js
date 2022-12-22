@@ -7,6 +7,7 @@ const config = {
 		sourcemap: false,
 		rollupOptions: {
 			sourcemap: false,
+			cache: false,
 			maxParallelFileOps: 10
 		}
 	}
